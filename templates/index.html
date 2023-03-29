@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Calculator</title>
+        <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    </head>
+
+    <body>
+
+        <div class="main">
+
+
+            <div class="calculator-container">
+
+                <div class="calculator-number" id="calculator-number">
+                </div>
+
+                <div class="calculator-buttons-container">
+                    <div class="calculator-button calculator-button-second" onclick="copyToClipboard()">
+                        <i class="fa-solid fa-copy fa-xs"></i>
+                    </div>
+                    <div class="calculator-button calculator-button-second" onclick="clear_all()">C</div>
+                    <div class="calculator-button calculator-button-second" onclick="remove_number()">
+                        <i class="fas fa-delete-left"></i>
+                    </div>
+                    <div class="calculator-button calculator-button-mark" onclick="calculate()">
+                        <i class="far fa-equals fa-xs"></i>
+                    </div>
+                    <div class="calculator-button calculator-button-main" id="1" onclick="add_number(this.id)">1</div>
+                    <div class="calculator-button calculator-button-main" id="2" onclick="add_number(this.id)">2</div>
+                    <div class="calculator-button calculator-button-main" id="3" onclick="add_number(this.id)">3</div>
+                    <div class="calculator-button calculator-button-second" id="+" onclick="add_number(this.id)">
+                        <i class="fas fa-plus fa-xs"></i>
+                    </div>
+                    <div class="calculator-button calculator-button-main" id="4" onclick="add_number(this.id)">4</div> 
+                    <div class="calculator-button calculator-button-main" id="5" onclick="add_number(this.id)">5</div>
+                    <div class="calculator-button calculator-button-main" id="6" onclick="add_number(this.id)">6</div>
+                    <div class="calculator-button calculator-button-second" id="-" onclick="add_number(this.id)">
+                        <i class="fas fa-minus fa-xs"></i>
+                    </div>
+                    <div class="calculator-button calculator-button-main" id="7" onclick="add_number(this.id)">7</div>
+                    <div class="calculator-button calculator-button-main" id="8" onclick="add_number(this.id)">8</div>
+                    <div class="calculator-button calculator-button-main" id="9" onclick="add_number(this.id)">9</div>
+                    <div class="calculator-button-smaller calculator-button-second" id="x" onclick="add_number(this.id)">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="calculator-button-smaller calculator-button-second" onclick="switch_to_plus_or_minus()">
+                        <i class="fas fa-plus-minus"></i>
+                    </div>
+                    <div class="calculator-button calculator-button-main" id="0" onclick="add_number(this.id)">0</div>
+                    <div class="calculator-button calculator-button-second" id="." onclick="add_number(this.id)">.</div>
+                    <div class="calculator-button calculator-button-second" id="÷" onclick="add_number(this.id)">
+                        <i class="fas fa-divide fa-xs"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-line"></div>
+            <a href="https://github.com/AdamIx4644">
+                <div class="footer-created-by">Created By</div>
+                <div class="footer-author">- Adam Burdík -</div>
+            </a>
+        </div>
+
+        <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+
+
+    </body>
+</html>

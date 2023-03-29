@@ -1,0 +1,123 @@
+.main {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(85, 85, 85);
+}
+.calculator-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 384px;
+    height: 384px;
+    border: 2px solid rgb(49, 49, 49);
+    border-radius: 15px;
+    z-index: 1;
+    background-color: rgb(65, 65, 65);
+}
+.calculator-number {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 90%;
+    height: 15%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: right; 
+    align-items: center;
+    color: white;
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0.5px solid rgb(105, 105, 105);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.calculator-buttons-container {
+    position: relative;
+    display: grid;
+    left: 50%;
+    top: 62%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 65%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    z-index: 1;
+
+}
+.calculator-button {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 32px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.calculator-button-smaller {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.calculator-button-main {
+    background-color: rgb(102, 102, 102);
+}
+.calculator-button-second {
+    background-color: rgb(50, 50, 50);
+}
+.calculator-button-mark {
+    background-color: rgb(255, 121, 121);
+}
+
+.footer-line {
+    position: absolute; 
+    top: 90%;
+    left: 50%;
+    width: 65%;
+    height: 0.5%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(66, 66, 66);
+    border-radius: 3px;
+}
+.footer-created-by {
+    position: absolute; 
+    display: flex;
+    top: 93%;
+    left: 50%;
+    width: 20%;
+    height: 2%;
+    transform: translate(-50%, -50%);
+    color: white;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.footer-author {
+    position: absolute; 
+    display: flex;
+    top: 95%;
+    left: 50%;
+    width: 20%;
+    height: 2%;
+    transform: translate(-50%, -50%);
+    color: white;
+    justify-content: center; 
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
